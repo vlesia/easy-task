@@ -1,13 +1,6 @@
-<div>
+<app-card>
   <button [class.active]="selected" (click)="onSelectUser()">
-    <img [src]="imagePath" [alt]="user.name">
+    <img [src]="imagePath" [alt]="user.name" />
     <span>{{ user.name }}</span>
   </button>
-</div>
-
-
-  <!-- @if (selectedUser) {
-    <app-tasks [userId]="selectedUser.id" [name]="selectedUser.name" />
-  } @else {
-    <p id="fallback">Select a user to see their tasks!</p>
-  } -->
+</app-card>
