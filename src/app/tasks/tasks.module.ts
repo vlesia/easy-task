@@ -9,7 +9,7 @@ import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [TasksComponent, TaskComponent, NewTaskComponent],
-  exports: [CommonModule],
-  imports: [FormsModule, TasksComponent, SharedModule],
+  exports: [TasksComponent],
+  imports: [CommonModule, FormsModule, SharedModule],
 })
 export class TasksModule {}
